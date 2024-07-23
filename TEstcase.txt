@@ -1,0 +1,94 @@
+To effectively address Task 3, follow these steps to explore the demo site and document your findings:
+
+1. Login and Exploration
+Log In to the Demo Site:
+
+Go to Sauce Demo
+Use the following credentials for each user type:
+problem_user: Username problem_user, Password secret_sauce
+error_user: Username error_user, Password secret_sauce
+visual_user: Username visual_user, Password secret_sauce
+performance_glitch_user: Username performance_glitch_user, Password secret_sauce
+Explore Each User Type:
+
+problem_user: Check for common issues or problems in the UI.
+error_user: Identify error messages and handling.
+visual_user: Observe visual inconsistencies or design issues.
+performance_glitch_user: Test for performance glitches or slow loading.
+
+2. UI Test Cases
+Create test cases to validate the functionality and UI of the demo site. Here’s a template to help you get started:
+
+Test Case Template:
+Test Case ID: TC-01
+Test Case Name: Login with Valid Credentials
+Description: Verify that users can log in with valid credentials.
+Preconditions: User is on the login page.
+Test Steps:
+Enter problem_user as username.
+Enter secret_sauce as password.
+Click the "Login" button.
+Expected Result: User is logged in and redirected to the homepage.
+Actual Result: [To be filled during execution]
+Status: Pass/Fail
+Notes: [Any additional observations]
+Example Test Cases:
+Test Case: Login Functionality
+
+Test Case ID: TC-01
+Description: Verify that users can log in with valid credentials.
+Steps:
+Enter problem_user as username.
+Enter secret_sauce as password.
+Click "Login."
+Expected Result: User successfully logs in and is redirected to the homepage.
+Test Case: Error Message Display
+
+Test Case ID: TC-02
+Description: Verify that the correct error message is displayed for invalid credentials.
+Steps:
+Enter invalid_user as username.
+Enter invalid_password as password.
+Click "Login."
+Expected Result: Error message "Username and password do not match any user in this service" is displayed.
+Test Case: Visual Design Consistency
+
+Test Case ID: TC-03
+Description: Check for visual consistency across different user types.
+Steps:
+Log in with visual_user.
+Navigate through different pages.
+Expected Result: UI elements are consistently styled and no visual issues are present.
+Test Case: Performance Glitch Detection
+
+Test Case ID: TC-04
+Description: Test the performance and responsiveness with performance_glitch_user.
+Steps:
+Log in with performance_glitch_user.
+Navigate through various pages and interact with elements.
+Expected Result: Pages should load within an acceptable time frame without noticeable lag.
+3. Bug Reporting
+Document any bugs discovered during the testing in a clear and structured format. Here's a sample format:
+
+Bug Report Template:
+Bug ID: BUG-01
+Title: [Brief description of the bug]
+Description: [Detailed description of the bug]
+Steps to Reproduce:
+[Step 1]
+[Step 2]
+Expected Result: [What should happen]
+Actual Result: [What actually happens]
+Severity: [Critical/High/Medium/Low]
+Environment: [Details about the environment where the bug was observed]
+Screenshots: [Attach any relevant screenshots]
+Notes: [Any additional information]
+Example Bug Report:
+Bug ID: BUG-01
+Title: Missing Error Message on Invalid Login
+Description: When logging in with invalid credentials, no error message is displayed.
+Steps to Reproduce:
+Enter invalid_user as username.
+Enter invalid_password as password.
+Click "Login."
+Expected Result: Error message should be displayed indicating invalid credentials.
